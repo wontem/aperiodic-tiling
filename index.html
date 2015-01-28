@@ -39,6 +39,11 @@
 			box-shadow: none;
 			background: transparent;
 		}
+
+		.reveal .description {
+			padding: 1rem;
+			background: #222;
+		}
 		</style>
 	</head>
 
@@ -83,29 +88,161 @@
 				</section>
 
 				<section>
-					<h3>Periodic tilings</h3>
-					<img src="attachments/periodic-explaining.jpg" height="314" width="394" alt="">
+					<section data-background="attachments/periodic.png">
+						<div class="description fragment fade-out" data-fragment-index="1">
+							<h3>Periodic tilings</h3>
+							<p>Has a repeating pattern</p>
+						</div>
+					</section>
+
+					<section>
+						<img src="attachments/periodic-paving-stone.jpg" height="600" width="625" alt="">
+					</section>
+
+					<section>
+						<img src="attachments/escher-lizard.jpg" height="600" alt="">
+					</section>
+				</section>
+
+				<section data-background="attachments/non-periodic.png">
+					<div class="description fragment fade-out" data-fragment-index="1">
+						<h3>Nonperiodic tilings</h3>
+						<p>A tiling that lacks a repeating pattern</p>
+					</div>
 				</section>
 
 				<section>
-					<img src="attachments/periodic-paving-stone.jpg" height="600" width="625" alt="">
+					<section data-background="attachments/aperiodic.png">
+						<div class="description fragment fade-out" data-fragment-index="1">
+							<h3>Aperiodic tilings</h3>
+							<p>Non-periodic tiling with the additional property that it does not contain arbitrarily large periodic patches</p>
+						</div>
+					</section>
+
+					<section>
+						<h3>Wang tiles</h3>
+						<img src="attachments/wang.jpg" height="600" alt="">
+					</section>
+
+					<section>
+						<img src="attachments/path_of_exile.png" height="600" alt="">
+					</section>
+
 				</section>
 
 				<section>
-					<img src="attachments/escher-lizard.jpg" height="600" alt="">
+					<section data-background="attachments/multigrid.png">
+						<div class="description fragment fade-out" data-fragment-index="1">
+							<h3>De Bruijn multigrid method</h3>
+							<p>Generating quasiperiodic tiling</p>
+						</div>
+					</section>
+
+					<section>
+						<div class="description">
+							<p>Create n axes with the same unit length</p>
+						</div>
+					</section>
+					<section data-background="attachments/multigrid-method/1.png">
+						<div class="description fragment">
+							<p>For each axes define normals</p>
+						</div>
+					</section>
+					<section data-background="attachments/multigrid-method/2.png">
+						<div class="description fragment">
+							<p>Shift normals by the distance x, where 0 < x < 1</p>
+						</div>
+					</section>
+					<section data-background="attachments/multigrid-method/3.png">
+						<div class="description fragment">
+							<p>Build grids by shifting normals by unit vector</p>
+						</div>
+					</section>
+					<section data-background="attachments/multigrid-method/4.png">
+						<div class="description fragment">
+							<p>Multigrid is done</p>
+						</div>
+					</section>
+					<section data-background="attachments/multigrid-method/5.png">
+						<div class="description fragment">
+							<p>Find intersections of lines</p>
+						</div>
+					</section>
+					<section data-background="attachments/multigrid-method/6.png">
+						<div class="description fragment">
+							<p>For each intersection find multigrid coordinates of surrounding polygons. They will converts in vertices of tiles</p>
+						</div>
+					</section>
+					<section data-background="attachments/multigrid-method/7.png">
+					</section>
+					<section data-background="attachments/multigrid-method/8.png">
+						<div class="description fragment">
+							<p>Vertice in tiling is sum of n vectors, where each vector is determined by the angle of axis and it's magnitude is coordianate on this axis</p>
+						</div>
+					</section>
 				</section>
 
 				<section>
-					<h3>Nonperiodic tilings</h3>
-					<img src="attachments/Ammann–Beenker.png" height="400" width="400" alt="">
-				</section>
-				<section>
-					<h3>Aperiodic tilings</h3>
-					<img class="png" src="attachments/Penrose_Tiling.png" height="600" width="600" alt="">
+
+					<section data-background="attachments/results/step1.png">
+						<div class="description fragment fade-out">
+							<p>Changing shift value</p>
+						</div>
+					</section>
+					<section data-background="attachments/results/step2.png"></section>
+					<section data-background="attachments/results/step3.png"></section>
+					<section data-background="attachments/results/step4.png"></section>
+
+					<section data-background="attachments/results/angle1.png">
+						<div class="description fragment fade-out">
+							<p>Changing angle step</p>
+						</div>
+					</section>
+					<section data-background="attachments/results/angle2.png"></section>
+					<section data-background="attachments/results/angle3.png"></section>
+					<section data-background="attachments/results/angle4.png"></section>
+
+					<section data-background="attachments/results/grids1.png">
+						<div class="description fragment fade-out">
+							<p>Changing grids amount</p>
+						</div>
+					</section>
+					<section data-background="attachments/results/grids2.png"></section>
+					<section data-background="attachments/results/grids3.png"></section>
+					<section data-background="attachments/results/grids4.png"></section>
+
+					<section data-background="attachments/results/circles1.png">
+						<div class="description fragment fade-out">
+							<p>On place of rhombuses can be something else. Circles, for example</p>
+						</div>
+					</section>
+					<section data-background="attachments/results/circles2.png"></section>
+					<section data-background="attachments/results/circles3.png"></section>
+					<section data-background="attachments/results/circles4.png"></section>
 				</section>
 
 				<section>
-					De Bruijn multigrid method
+					<section>
+						<p>A few words about angles in V8</p>
+						<img src="attachments/slow_angle.jpg" height="536" width="830" alt="">
+					</section>
+
+					<section>
+						<img src="attachments/jsperf0.jpg" height="647" width="1003" alt="">
+					</section>
+
+					<section>
+						<img src="attachments/jsperf.jpg" height="647" width="1003" alt="">
+					</section>
+				</section>
+
+				<section>
+					<h3>Hey, that's not all</h3>
+					<p><a href="http://wontem.github.io/demos/multigrid-playground">How about Game of Life on aperiodic tiling?</a></p>
+				</section>
+
+				<section>
+					<h3>Thank you!</h3>
 				</section>
 			</div>
 
