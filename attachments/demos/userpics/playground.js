@@ -43,4 +43,6 @@ window.addEventListener('load', function () {
 	var customContainer = document.querySelector('.userpic-playground');
 	customContainer.appendChild(gui.domElement);
 	customContainer.appendChild(canvas);
+
+	window.userpicDemoRunner = controller.demo.bind(controller);
 });

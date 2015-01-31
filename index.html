@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Aperiodic tiling</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -91,7 +91,7 @@
 					<section data-background="attachments/periodic.png">
 						<div class="description fragment fade-out" data-fragment-index="1">
 							<h3>Periodic tilings</h3>
-							<p>Has a repeating pattern</p>
+							<p>Have a repeating pattern</p>
 						</div>
 					</section>
 
@@ -104,11 +104,34 @@
 					</section>
 				</section>
 
-				<section data-background="attachments/non-periodic.png">
-					<div class="description fragment fade-out" data-fragment-index="1">
-						<h3>Nonperiodic tilings</h3>
-						<p>A tiling that lacks a repeating pattern</p>
-					</div>
+				<section>
+					<section data-background="attachments/non-periodic.png">
+						<div class="description fragment fade-out" data-fragment-index="1">
+							<h3>Nonperiodic tilings</h3>
+							<p>Tilings that lack a repeating pattern</p>
+						</div>
+					</section>
+
+					<section data-background="attachments/wang/tiling_texture.png">
+						<div class="description fragment fade-out" data-fragment-index="1">
+							<h3>Wang tiles</h3>
+						</div>
+					</section>
+
+					<section>
+						<img src="attachments/wang/atlas_grid.png" height="256" width="256" alt="">
+						<img src="attachments/wang/atlas_texture.png" height="256" width="256" alt="">
+						<img src="attachments/wang/atlas_texture_stroked.png" height="256" width="256" alt="">
+					</section>
+
+					<section data-background="attachments/wang/tiling_grid.png"></section>
+					<section data-background="attachments/wang/tiling_texture_stroked.png"></section>
+					<section data-background="attachments/wang/tiling_texture.png"></section>
+
+					<section data-background="white">
+						<h3>Aperiodic tileset</h3>
+						<img class="png" src="attachments/wang.jpg" height="500" alt="">
+					</section>
 				</section>
 
 				<section>
@@ -116,31 +139,32 @@
 						<div class="description fragment fade-out" data-fragment-index="1">
 							<h3>Aperiodic tilings</h3>
 							<p>Non-periodic tiling with the additional property that it does not contain arbitrarily large periodic patches</p>
+							<p>For example Penrose P3 tiling</p>
 						</div>
 					</section>
 
 					<section>
-						<h3>Wang tiles</h3>
-						<img src="attachments/wang.jpg" height="600" alt="">
+						<h3>Penrose tiling rules</h3>
+						<img src="attachments/Penrose_rhombs_matching_rules.png" height="313" width="306" alt="" class="png">
 					</section>
+				</section>
 
-					<section>
-						<img src="attachments/path_of_exile.png" height="600" alt="">
-					</section>
-
+				<section>
+					<h3>Quasicrystal</h3>
+					<img src="attachments/quasicrystal.jpg" height="480" width="470" alt="">
 				</section>
 
 				<section>
 					<section data-background="attachments/multigrid.png">
 						<div class="description fragment fade-out" data-fragment-index="1">
 							<h3>De Bruijn multigrid method</h3>
-							<p>Generating quasiperiodic tiling</p>
+							<p>Generating quasiperiodic tilings</p>
 						</div>
 					</section>
 
 					<section>
 						<div class="description">
-							<p>Create n axes with the same unit length</p>
+							<p>Create n axes defined by their unit length</p>
 						</div>
 					</section>
 					<section data-background="attachments/multigrid-method/1.png">
@@ -150,7 +174,7 @@
 					</section>
 					<section data-background="attachments/multigrid-method/2.png">
 						<div class="description fragment">
-							<p>Shift normals by the distance x, where 0 < x < 1</p>
+							<p>Shift normals by some distance</p>
 						</div>
 					</section>
 					<section data-background="attachments/multigrid-method/3.png">
@@ -170,20 +194,24 @@
 					</section>
 					<section data-background="attachments/multigrid-method/6.png">
 						<div class="description fragment">
-							<p>For each intersection find multigrid coordinates of surrounding polygons. They will converts in vertices of tiles</p>
+							<p>For each intersection find multigrid coordinates of surrounding polygons. They will convert into vertices of tiles</p>
 						</div>
 					</section>
 					<section data-background="attachments/multigrid-method/7.png">
 					</section>
 					<section data-background="attachments/multigrid-method/8.png">
 						<div class="description fragment">
-							<p>Vertice in tiling is sum of n vectors, where each vector is determined by the angle of axis and it's magnitude is coordianate on this axis</p>
+							<p>Vertice in tiling is sum of n vectors, where each vector is determined by the angle of axis and its magnitude is coordinate on this axis</p>
 						</div>
 					</section>
 				</section>
 
 				<section>
-
+					<section data-background="attachments/aperiodic.png">
+						<div class="description fragment fade-out">
+							<p>Result</p>
+						</div>
+					</section>
 					<section data-background="attachments/results/step1.png">
 						<div class="description fragment fade-out">
 							<p>Changing shift value</p>
@@ -195,7 +223,7 @@
 
 					<section data-background="attachments/results/angle1.png">
 						<div class="description fragment fade-out">
-							<p>Changing angle step</p>
+							<p>Changing angles of axes</p>
 						</div>
 					</section>
 					<section data-background="attachments/results/angle2.png"></section>
@@ -204,7 +232,7 @@
 
 					<section data-background="attachments/results/grids1.png">
 						<div class="description fragment fade-out">
-							<p>Changing grids amount</p>
+							<p>Changing number of grids</p>
 						</div>
 					</section>
 					<section data-background="attachments/results/grids2.png"></section>
@@ -213,7 +241,7 @@
 
 					<section data-background="attachments/results/circles1.png">
 						<div class="description fragment fade-out">
-							<p>On place of rhombuses can be something else. Circles, for example</p>
+							<p>Something else can take the place of rhombi. Circles, for example</p>
 						</div>
 					</section>
 					<section data-background="attachments/results/circles2.png"></section>
